@@ -20,7 +20,8 @@
 
     <div class="container">
         <h2>
-            <form method="POST" action="counter/">
+            <form name="words" method="POST" action="counter/">
+                {% csrf_token %}
                 <textarea name="words" cols="70%" rows="10%"></textarea>
                 <br>
                 <button type="submit">Submit</button>

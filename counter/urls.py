@@ -6,5 +6,6 @@ from . import views
 app_name = 'counter'
 
 urlpatterns = [
-    path('', views.index, name='index')
+    path('', views.index, name='index'),
+    path('counter/', views.display_amount, name='display_amount')
 ]
