@@ -11,10 +11,18 @@
 
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
     <title>Words</title>
+
+    <style>
+        p {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <h1>Your Words</h1>
+    <br>
+    <h1>Word Counter By Jesse Amarquaye</h1>
     <div>
+        <br>
         <p>The number of words in your sample is {{ amount }}</p>
         <p>To try word-counter again click <a href="{% url 'counter:index' %}">here</a></p>
     </div>

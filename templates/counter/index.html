@@ -10,11 +10,17 @@
     <link rel="stylesheet" href="{% static 'css/main.css' %}">
 
     <script src="{% static 'js/bootstrap.min.js'}"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');  
+    </style>
+
     <title>Word Counter</title>
 </head>
 <body>
     <div class="container">
-        <h1>Hello world</h1>
+        <br>
+        <h1>Enter Your Text</h1>
         <br>
     </div>
 
@@ -22,9 +28,9 @@
         <h2>
             <form name="words" method="POST" action="counter/">
                 {% csrf_token %}
-                <textarea name="words" cols="70%" rows="10%"></textarea>
+                <textarea class="input-group" name="words" cols="70%" rows="10%"></textarea>
                 <br>
-                <button type="submit">Submit</button>
+                <button class="btn" type="submit" style="color: rgb(111, 111, 116); border: 2px solid rgb(21, 125, 251); font-weight:bold"> Submit </button>
         </h2>
     </div>
 </body>

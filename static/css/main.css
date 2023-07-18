@@ -1,9 +1,19 @@
+body {
+    background-color: rgba(248, 248, 248, 0.9);
+    font-family: 'Caveat', cursive;
+    font-weight: 500;
+}
+
 h1 {
-    color:blue;
+    color: rgb(21, 125, 251);
     text-align: center;
 }
 
-textarea {
+h2 {
+    color: rgb(21, 125, 251);
+    text-align: center;
+}
+
+p {
     vertical-align: center;
-    align-content: center;
 }
